@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đặt phòng</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    .booking-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .booking-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .icon-calendar, .icon-guests {
+      font-size: 24px;
+      color: #a87c56;
+    }
+
+    .booking-details {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+    }
+
+    .divider {
+      width: 1px;
+      height: 40px;
+      background-color: #d3b894;
+    }
+
+    .booking-btn {
+      background-color: #5a6446;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .booking-btn:hover {
+      background-color: #4a523a;
+    }
+
+    input[type="date"] {
+      padding: 5px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="booking-container">
+    <div class="booking-item">
+      <i class="icon-calendar">📅</i>
+      <div class="booking-details">
+        <label for="checkin-date">Ngày nhận phòng</label>
+        <input type="date" id="checkin-date" name="checkin-date" value="2024-10-02">
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="booking-item">
+      <i class="icon-calendar">📅</i>
+      <div class="booking-details">
+        <label for="checkout-date">Ngày trả phòng</label>
+        <input type="hidden" id="checkout-date" name="checkout-date" value="2024-10-03">
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="booking-item">
+      <i class="icon-guests">👥</i>
+      <div class="booking-details">
+        <label for="guests">Khách</label>
+        <span>1 Phòng, 1 Người lớn, 0 Trẻ em</span>
+      </div>
+    </div>
+
+    <button class="booking-btn">Đặt phòng</button>
+  </div>
+
+</body>
+</html>

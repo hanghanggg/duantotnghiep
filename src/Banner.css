@@ -1,0 +1,402 @@
+/* Styles for the banner section */
+.banner-top {
+    position: relative; /* Để các phần tử bên trong có thể sử dụng vị trí tuyệt đối */
+    width: 100%;
+    height: 500px; /* Điều chỉnh chiều cao nếu cần */
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-text-top {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Tạo bóng cho chữ */
+}
+
+.banner-text-top h3 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.banner-text-top h1 {
+    font-size: 3.5rem;
+    margin: 0.5rem 0;
+}
+
+.banner-text-top p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Dòng chữ nổi */
+.banner-overlay-text {
+    position: absolute;
+    bottom: 10%; /* Điều chỉnh vị trí theo ý muốn */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white; /* Màu chữ */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Tạo bóng cho chữ */
+    display: flex; /* Sử dụng flexbox để căn chỉnh hàng ngang */
+    justify-content: center; /* Căn giữa các dòng */
+    gap: 20px; /* Khoảng cách giữa các dòng */
+    font-size: 1.2rem; /* Kích thước chữ */
+}
+
+/* Paragraph section styling */
+.content-section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.welcome-text {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.description-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Styles for the image row section */
+.image-row-section {
+    margin-left: 140px; 
+}
+
+.image-row {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start */
+}
+
+.image-item {
+    width: 410px;
+    height: 615px;
+    overflow: hidden; /* Ensure that any overflow is hidden */
+    border-radius: 10px; /* Optional: round the corners of the images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    margin-right: 10px; /* Adjust the right margin for spacing */
+}
+
+/* Remove margin for the last item to avoid extra space */
+.image-item:last-child {
+    margin-right: 0;
+}
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the container while maintaining aspect ratio */
+}
+
+/* Banner Bottom Section */
+.banner-bottom {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Điều chỉnh chiều cao nếu cần */
+    margin-top: 20px; /* Khoảng cách giữa banner và ảnh phía trên */
+}
+
+.banner-image-bottom {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Đảm bảo hình ảnh phủ đầy phần chứa */
+}
+
+.banner-text-bottom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7); /* Tạo bóng cho chữ */
+}
+
+.banner-text-bottom h3,
+.banner-text-bottom h1,
+.banner-text-bottom p {
+    margin: 1rem 0; /* Khoảng cách giữa các phần tử */
+}
+
+/* Dòng chữ nổi trong banner-bottom */
+.banner-overlay-text {
+    position: absolute;
+    bottom: 10%; /* Điều chỉnh vị trí theo ý muốn */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white; /* Màu chữ */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Tạo bóng cho chữ */
+    display: flex; /* Sử dụng flexbox để căn chỉnh hàng ngang */
+    justify-content: center; /* Căn giữa các dòng */
+    gap: 20px; /* Khoảng cách giữa các dòng */
+    font-size: 1.2rem; /* Kích thước chữ */
+}
+
+
+/* Existing styles... */
+
+/* Styles for the content boxes */
+.content-boxes {
+    display: flex; /* Use flexbox for side-by-side layout */
+    margin: 20px; /* Space around the boxes */
+}
+
+.image-box {
+    /* flex: 1;  */
+    margin-right: 20px; 
+    margin-left: 150px;
+}
+
+.room-image {
+    width: 650px; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: round the corners of the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.text-box {
+    margin-left: 70px;
+    wight:200px;
+    flex: 1; /* Take equal space */
+}
+
+.text-box h2 {
+    font-size: 2rem; /* Heading size */
+    margin-bottom: 0.5rem; /* Space below the heading */
+}
+
+.text-box h1 {
+    font-size: 2.5rem; /* Subheading size */
+    margin-bottom: 1rem; /* Space below the subheading */
+}
+
+.text-box p {
+    font-size: 1.2rem; /* Paragraph text size */
+    line-height: 1.6; /* Line height for readability */
+}
+
+/* Existing styles... */
+
+/* Button styles */
+.book-now-button {
+    background-color: #ff7f50; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 1.2rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    margin-top: 15px; 
+}
+
+.book-now-button:hover {
+    background-color: #ff6347; 
+}
+
+
+.content-boxes {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-start; /* Align text and images to the top */
+    gap: 20px; /* Space between text and images */
+    /* padding: 20px; Padding around the section */
+}
+
+.image-box {
+    display: flex;
+   
+}
+
+.room-image-large {
+    width: 400px; /* Adjust width for the large image */
+    height: 700px;
+}
+
+.room-image-small {
+    width: 200px; /* Adjust width for the small image */
+    height: 650px;
+    border-radius: 8px; 
+   margin-top:30px;
+}
+
+.text-box {
+    max-width: 500px;
+    /* margin-right: 100px; */
+}
+
+.book-now-button {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px; /* Space between the button and the paragraph */
+}
+
+.book-now-button:hover {
+    background-color: #ff4500; /* Slightly darker color on hover */
+}
+
+.content-boxess {
+    display: flex; /* Use flexbox for side-by-side layout */
+    margin: 20px; /* Space around the boxes */
+}
+.content-boxess {
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: flex-start; Align text and images to the top */
+    gap: 20px; /* Space between text and images */
+    /* padding: 20px; Padding around the section */
+}
+.content-sectionn {
+    text-align: center;
+    padding: 2rem;
+}
+
+.welcome-textt {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+.section-about-us-service {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    width: auto;
+    height:620px;
+}
+
+.heading-title {
+    margin-bottom: 40px;
+}
+
+.heading-title .title1 {
+    font-size: 24px;
+    font-weight: 600;
+    /* color: #333;  */
+}
+
+.heading-title .title2 {
+    font-size: 32px;
+    font-weight: 700;
+    /* color: #007bff; */
+    margin: 10px 0;
+}
+
+.heading-title .heading-desc {
+    font-size: 16px;
+    color: #666; /* Subtle color for description */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative; /* Center the service items */
+}
+
+.service-item {
+    background: #fff; /* White background for service items */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    overflow: hidden; /* Prevent overflow for border-radius */
+    margin: 15px; /* Space between service items */
+    transition: transform 0.3s; /* Smooth scaling on hover */
+}
+
+.service-item:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.item-icon img {
+    width: 42px; /* Responsive image */
+    height: 42px;
+    display: block;
+    /* margin-top: 35px;
+    margin-left: 50px; */
+    position:absolute;
+}
+
+.item-detail {
+    padding: 20px;
+    text-align: center; /* Center the text */
+}
+
+.item-detail .detail-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333; /* Dark color for service title */
+    margin-bottom: 10px;
+}
+
+.item-detail .detail-desc {
+    font-size: 14px;
+    color: #666;
+    padding-top: 20px; /* Subtle color for service description */
+}
+
+
+/* Section About Us Service */
+.section-about-us-service {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: none;
+    font-weight: 400;
+    text-align: left;
+    color: var(--shop-color-text);
+    line-height: 1.45;
+    font-size: 16px;
+    font-family: var(--font-family-sans-serif);
+    cursor: url("data:image/png;base64,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") 1 1, auto !important;
+    margin: 0;
+    box-sizing: border-box;
+    display: block;
+    padding: 100px 0;
+    background: var(--about-us-service-bg); 
+  
+}
+
+/* You can also add specific styles for elements inside the section */
+.section-about-us-service h1, 
+.section-about-us-service p, 
+.section-about-us-service h2 {
+    font-family: var(--font-family-sans-serif); /* Adjust font family */
+    margin-bottom: 20px; /* Add margin for spacing */
+    text-align: center;  /* Center-align text */
+}
+
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .heading-title .title1, 
+    .heading-title .title2 {
+        font-size: 20px;
+    }
+    
+    .service-item {
+        margin: 10px; /* Smaller margin on mobile */
+    }
+}

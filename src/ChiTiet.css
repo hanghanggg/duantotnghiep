@@ -1,0 +1,427 @@
+/* page chi tiet */
+/* Layout */
+.layout-c {
+    display: flex;
+    flex-direction: column;
+  }
+  /* Product Details */
+  .productDetail-information {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .productDetail--main {
+    flex: 1;
+  }
+  .productDetail--gallery {
+    margin-bottom: 40px;
+  }
+  .text_24px{
+    font-size: 24px;
+    margin: 0 0 20px;
+    text-align: left;
+  }
+  .product-container-gallery {
+    position: relative;
+  }
+  
+  .wrapbox-gallery {
+    overflow: hidden;
+  }
+  
+  .wrapbox-image {
+    position: relative;
+  }
+  
+  .productGallery_slider {
+    display: flex;
+    /* overflow-x: auto; */
+    scroll-behavior: smooth;
+  }
+  
+  .product-gallery {
+    min-width: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .icon-gallery {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Product Content */
+  .container {
+    /* display: flex; */
+    flex-wrap: wrap;
+  }
+  
+  .wrapbox-left {
+    flex: 0 0 66.66%;
+    padding-right: 20px;
+  }
+  
+  .wrapbox-right {
+    flex: 0 0 33.33%;
+  }
+  
+  .product-heading h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .wrapbox-detail {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  /* Booking Form */
+  .form-booking {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .pro-total {
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .wrapbox-left, .wrapbox-right {
+        flex: 0 0 100%;
+        padding-right: 0;
+    }
+  
+    .productDetail--gallery {
+        margin-bottom: 10px;
+    }
+  }
+  /* akak */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: 216px   216px; */
+    gap: 4px;
+    margin-top: 70px;
+    margin: 0 auto;
+  } 
+ .large:first-child {
+    grid-row: 1/ span 2;
+    grid-column: 1/ span 2;
+    width: 100%;
+    height: 100%;
+  }
+  .small {
+    width: 100%;
+    height: 100%;
+  }
+  .large img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  
+  
+  /* Container and General Layout */
+  .container {
+    max-width: 1550px;
+    margin: 0 auto;
+    /* padding: 20px; */
+  }
+  
+  .d-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .col-lg-8, .col-lg-4, .col-md-12, .col-12 {
+    padding: 10px;
+  }
+  /* Heading and Tags */
+  .product-heading h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .pro-tag {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .tag-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .tag-item span {
+    margin-left: 5px;
+    color: #333;
+  }
+  /* Room Details */
+  .product-description {
+    margin-top: 20px;
+  }
+  .description-productdetail p{
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+  }
+  
+  /* Price Section */
+  #form-booking-pro .product-price {
+    background-color: #fff;
+    display: flex ;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .person{
+    font-size: 14px;
+  }
+  .col-xs-12{
+    margin: 0;
+  }
+  .pro-total label{
+    font-size: 25px;
+    color: #252a2b;
+    font-weight: 300;
+  }
+  .pro-title{
+    font-size: 20px;
+  }
+  #form-booking-pro .pro-price-chitiet {
+    font-size: 18px;
+  }
+  
+  #form-booking-pro .pro-price .person {
+    font-size: 16px;
+    font-weight: normal;
+    color: #777;
+  }
+  
+  /* Booking Form */
+  .form-booking {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .input-group {
+    position: relative;
+  }
+  
+  .field-error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  /* Date Pickers */
+  .pro-datepicker label {
+    font-size: 14px;
+    color: #333;
+    width: 100%;
+  }
+  
+  .t-dates {
+    display: flex;
+    align-items: center;
+  }
+  
+  .t-dates span {
+    font-size: 16px;
+    margin-right: 5px;
+    color: #333;
+  }
+  
+  .icon-down {
+    margin-left: 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  /* Quantity Controls */
+  .group-dropdown-qty {
+    position: relative;
+  }
+  .pd_chitiet{
+    padding: 8px 20px;
+    border: 1px solid #b99d75;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  
+  }
+  .pd_chitiet select{
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
+  .pd_chitiet label{
+    width: 100%;
+    font-size: 14px;
+  }
+  .pd_chitiet select:focus{
+    outline: none;
+  }
+  .qty-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .qty-btn {
+    background-color: #ddd;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .qty-btn-minus.disabled {
+    cursor: not-allowed;
+  }
+  
+  .pro-input-qty {
+    text-align: center;
+    width: 50px;
+    font-size: 14px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Total Price Section */
+  .pro-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .pro-num-total {
+   font-weight: 400;
+  }
+  
+  /* Submit Button */
+  .addcart-area {
+    text-align: center;
+  }
+  
+  .add-to-cartProduct {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .add-to-cartProduct:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .wrapbox-left, .wrapbox-right {
+        flex: 100%;
+        max-width: 100%;
+    }
+  
+    .form-control {
+        font-size: 14px;
+    }
+  
+    .pro-price {
+        font-size: 24px;
+    }
+  
+    .add-to-cartProduct {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+  }
+  .pro-form{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 20px;
+    margin-bottom: 25px;
+    border: 1px solid #b99d75;
+  }
+  .t-check-in, .t-check-out {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .t-input-check-in, .t-input-check-out {
+    width: 100%; 
+    border: none;
+    text-align: end;
+    cursor: pointer;
+  }
+  .t-input-check-in, .t-input-check-out:focus{
+    outline: none;
+  }
+  .icon-down {
+    position: absolute;
+    right: 10px;
+    font-size: 18px;
+    color: #333;
+    pointer-events: none;
+  }
+  .pri_chitiet{
+    font-size: 12px;
+    padding: 5px;
+  }
+  .aaaa{
+    margin-top: 200px !important;
+  }
+  /* page chi tiet */
+
+  .homestay_list li{
+    max-width: 400px;
+    padding: 0 15px;
+    width: 25%;
+  }
+  .img_homstay{
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    aspect-ratio: 3/2;
+  }

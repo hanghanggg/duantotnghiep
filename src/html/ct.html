@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .product_slide{
+   width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.product_slide .swiper4{
+    width: 100%;
+    height: 370px;
+    padding: 10px 0;
+}
+.product_slide .swiper-button-next, .swiper-button-prev {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  color: #3478f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.product_slide .swiper-button-prev{
+    background-color: #fff;
+  width: 40px;
+  height: 40px;
+  color: #3478f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.product_slide .swiper-button-next::after {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+.product_slide .swiper-button-prev::after {
+    font-size: 14px;
+    font-weight: 600;
+  }
+.product_slide  .swiper-slide {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+.product_slide  .swiper-slide a{
+    width: 100%;
+    height: 100%;
+}
+.product_slide .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+</style>
+<body>
+    <div class="product_slide">
+        <div class="swiper mySwiper swiper4">
+            <div class="swiper-wrapper">
+                <!-- Fancybox links on images -->
+                <div class="swiper-slide">
+                  <a href="img/product_de/de1.webp" data-fancybox="gallery" data-caption="Slide 1">
+                    <img src="https://cafefcdn.com/203337114487263232/2022/6/12/1-16550161248491665590872.jpg" alt="Slide 1" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="img/product_de/de2.webp" data-fancybox="gallery" data-caption="Slide 2">
+                    <img src="https://cafefcdn.com/203337114487263232/2022/6/12/3-16550161410561043317266.jpg" alt="Slide 2" />
+                </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="img/product_de/de3.webp" data-fancybox="gallery" data-caption="Slide 3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD5J_zJ13fw55Iivv7OR4AopBOkanYQNAKJQ&s" alt="Slide 3" />
+                </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="img/product_de/de4.webp" data-fancybox="gallery" data-caption="Slide 4">
+                    <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1440,h_750/https://viashotels.com/wp-content/uploads/2022/05/Rectangle-2772.jpg" alt="Slide 4" />
+                </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="img/product_de/de5.webp" data-fancybox="gallery" data-caption="Slide 5">
+                    <img src="https://nha.today/wp-content/uploads/2022/05/bai-truong-phu-quoc.jpg" alt="Slide 5"  />
+                </a>
+                </div>
+               
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+          
+          </div>
+     </div>
+</body>
+<script>
+    $(document).ready(function(){
+  var swiper = new Swiper(".swiper4", {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+})
+</script>
+</html>
